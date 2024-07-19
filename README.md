@@ -1,1 +1,3 @@
-run with 'npm start'
+Run the next commands:
+* npm install
+* npm start
