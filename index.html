@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Web Monitor</title>
+</head>
+<body>
+  <h1>Monitor de Cambios en Sitios Web</h1>
+  <form id="urlForm">
+    <input type="text" id="urlInput" placeholder="URL del sitio web" required>
+    <input type="number" id="intervalInput" placeholder="Intervalo en segundos" required>
+    <button type="submit">Añadir</button>
+  </form>
+  <ul id="urlList"></ul>
+  <h2>Contenido Monitoreado</h2>
+  <ul id="contentList"></ul>
+  <script src="renderer.js"></script>
+</body>
+</html>
