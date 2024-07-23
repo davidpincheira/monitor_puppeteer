@@ -31,7 +31,6 @@ document.getElementById('urlForm').addEventListener('submit', (event) => {
   ipcRenderer.send('add-url', { url, interval });
 });
 
-//esto deberia eliminar pero no funciona
 ipcRenderer.on('url-content', (event, { url, res }) => {
   console.log(`Contenido recibido de ${url}: ${res}`);
   const contentList = document.getElementById('contentList');
